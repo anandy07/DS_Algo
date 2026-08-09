@@ -2,7 +2,7 @@
 // T.C : O(n log n)
 // S.C : O(1)
 
-
+ 
 class Solution {
 public:
     int secondLargestElement(vector<int>& nums) {
@@ -23,7 +23,7 @@ public:
 
 
 // 2 Approach : Two-Pass Approach => First find the Largest number then find the largest number smaller then it.
-// T.C : O(n)
+// T.C : O(n) + O(n) = O(n)
 // S.C : O(1)
 
 class Solution {
