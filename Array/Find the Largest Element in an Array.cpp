@@ -28,7 +28,6 @@ public:
         for(int i=1; i<n; i++){
             if(nums[i] > largest){
                 largest = nums[i];
-                break;
             }
         }
         return largest;
