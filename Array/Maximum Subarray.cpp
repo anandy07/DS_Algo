@@ -1,8 +1,8 @@
 // Leetocode Link : https://leetcode.com/problems/maximum-subarray/description/
 
-// 1 Approach : 
-// T.C : 
-// S.C : 
+// 1 Approach : Brute Force — 2 Loops 
+// T.C :  O(n²)
+// S.C :  O(1)
 
 
 class Solution {
@@ -26,9 +26,9 @@ public:
 };
 
 
-// 2 Approach : 
-// T.C : 
-// S.C : 
+// 2 Approach : Kadane's Algorithm
+// T.C : O(n)
+// S.C : O(1)
 
 
 class Solution {
