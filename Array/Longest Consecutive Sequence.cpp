@@ -27,6 +27,6 @@ public:
 };
 
 
-// 2 Approach : 
+// 2 Approach : Map 
 // T.C : 
 // S.C : 
