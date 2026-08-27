@@ -1,8 +1,8 @@
 // LeetCode Link  :  https://leetcode.com/problems/pascals-triangle/description/
 
 // 1 Approach : 
-// T.C : 
-// S.C :  
+// T.C : O(n²)
+// S.C : O(n²)
 
 
 
