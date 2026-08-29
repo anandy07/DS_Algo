@@ -29,7 +29,7 @@ public:
 };
 
 
-// 1 Approach : Map
+// 2 Approach : Map
 // T.C : O(n log n)
 // S.C : O(n)
 
