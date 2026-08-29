@@ -27,3 +27,28 @@ public:
 
     }
 };
+
+
+// 1 Approach : Map
+// T.C : O(n log n)
+// S.C : O(n)
+
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+
+        map<int,int>mp;
+
+        for(int i : nums){
+            mp[i]++;
+            
+        }
+        for(auto&i : mp){
+            if(i.second > 1){
+                return i.first;
+            }
+        }
+        return -1;
+    }
+};
