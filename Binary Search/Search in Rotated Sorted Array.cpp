@@ -22,7 +22,7 @@ public:
 };
 
 
-// 2 Approach : 
+// 2 Approach : map
 // T.C : 
 // S.C : 
 
