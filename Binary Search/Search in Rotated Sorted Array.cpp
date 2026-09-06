@@ -1,9 +1,9 @@
 // LeetCode Link  : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
 
-// 1 Approach : 
-// T.C : 
-// S.C : 
+// 1 Approach : Brute Force
+// T.C : O(n)
+// S.C : O(1)
 
 class Solution {
 public:
