@@ -39,3 +39,23 @@ public:
         return ans;
     }
 };
+
+
+// Problem:
+// Lower Bound
+
+// Pattern:
+// Binary Search 
+
+// Goal:
+// Find first index where nums[i] >= x.
+
+// Approach:
+
+// nums[mid] >= x
+// → possible answer
+// → store mid
+// → go LEFT
+
+// nums[mid] < x
+// → go RIGHT
