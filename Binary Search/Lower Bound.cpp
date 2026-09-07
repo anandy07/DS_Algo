@@ -46,7 +46,7 @@ public:
 
 // Pattern:
 // Binary Search 
-
+ 
 // Goal:
 // Find first index where nums[i] >= x.
 
