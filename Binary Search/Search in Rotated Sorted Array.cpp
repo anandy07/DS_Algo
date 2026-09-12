@@ -43,3 +43,8 @@ public:
         return mp[target];
     }
 };
+
+
+// 3 Approach : Binary Search
+// T.C : 
+// S.C : 
