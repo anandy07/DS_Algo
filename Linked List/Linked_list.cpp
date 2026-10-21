@@ -13,6 +13,14 @@ public:
     }
 };
 
+void print(Node* head){
+    while(head != NULL){
+        cout << head->data << " ";
+        head = head->next;
+    }
+    cout << endl;
+}
+
 Node* convertArr2LL(vector<int> &arr){
     Node* head = new Node(arr[0]);
     Node* mover = head;
@@ -44,6 +52,16 @@ bool checkIfPresent(Node* head , int val){
     }
     return false;
 }
+Node* DeleteTailLL(Node* head){
+
+    Node* temp = head;
+    if(head == NULL || head->next == NULL) return NULL;
+    while(temp->next->next != NULL){
+        temp = temp->next;
+    }
+    temp->next = NULL;
+    return head;
+}
 
 int main(){
     vector<int> arr = {4 , 7 ,8, 9 ,7};
@@ -58,10 +76,16 @@ int main(){
     
     // cout << lengthOfLL(head);
 
-    if(checkIfPresent(head , 12)){
-        cout << "YES";
-    }else{
-        cout << "NO";
-    }
+    // if(checkIfPresent(head , 12)){
+    //     cout << "YES";
+    // }else{
+    //     cout << "NO";
+    // }
+    head = DeleteTailLL(head);
+    print(head);
+
+    
+
+
 }
 
