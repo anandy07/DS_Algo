@@ -82,6 +82,25 @@ Node* DeleteKth(Node* head, int k){
     return head;
 }
 
+Node* DeleteByValue(Node* head, int v){
+
+
+    if(head->data == v) return head->next;
+
+    Node* temp = head;
+    Node* prev = NULL;
+    while( temp != NULL){
+
+        if(temp->data == v){
+            prev->next = prev->next->next;
+            break;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    return head;
+}
+
 int main(){
     vector<int> arr = {4 , 7 ,8, 9 ,7};
     Node* head = convertArr2LL(arr);
@@ -101,7 +120,11 @@ int main(){
     //     cout << "NO";
     // }
     // head = DeleteTailLL(head);
-    head = DeleteKth(head, 3);
+
+    // head = DeleteKth(head, 1);
+    // print(head);
+
+    head = DeleteByValue(head,9);
     print(head);
 
 }
