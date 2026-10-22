@@ -62,6 +62,25 @@ Node* DeleteTailLL(Node* head){
     temp->next = NULL;
     return head;
 }
+Node* DeleteKth(Node* head, int k){
+
+    int n = lengthOfLL(head);
+    if(k == n) return NULL;
+    if(k == 1) return head->next;
+    int cnt=0;
+    Node* temp = head;
+    Node* prev = NULL;
+    while( temp != NULL){
+        cnt++;
+        if(cnt == k){
+            prev->next = prev->next->next;
+            break;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    return head;
+}
 
 int main(){
     vector<int> arr = {4 , 7 ,8, 9 ,7};
@@ -81,11 +100,9 @@ int main(){
     // }else{
     //     cout << "NO";
     // }
-    head = DeleteTailLL(head);
+    // head = DeleteTailLL(head);
+    head = DeleteKth(head, 3);
     print(head);
-
-    
-
 
 }
 
