@@ -101,6 +101,46 @@ Node* DeleteByValue(Node* head, int v){
     return head;
 }
 
+Node* InsertAtHead(Node* head, int value){
+
+    Node* num = new Node(value);
+    num->next = head;
+    head = num;
+    return head;
+}
+
+Node* InsertAtLast(Node* head, int val){
+
+    Node* num = new Node(val);
+    Node* temp = head;
+    while(temp->next != NULL){
+
+        temp = temp->next;
+    }
+    temp->next = num;
+    return head;
+}
+
+Node* InsertAtKth(Node* head, int val, int k){
+
+    Node* num = new Node(val);
+    Node* temp = head;
+    int cnt=0;
+    while(temp != NULL){
+        
+        cnt++;
+        if(cnt == k){
+            num->next = temp->next;
+            temp->next = num;
+            break;
+        }
+        temp = temp->next;
+       
+    }
+    return head;
+}
+
+
 int main(){
     vector<int> arr = {4 , 7 ,8, 9 ,7};
     Node* head = convertArr2LL(arr);
@@ -124,8 +164,17 @@ int main(){
     // head = DeleteKth(head, 1);
     // print(head);
 
-    head = DeleteByValue(head,9);
-    print(head);
+    // head = DeleteByValue(head,9);
+    // print(head);
 
+    // head = InsertAtHead(head,99);
+    // print(head);
+
+
+    // head = InsertAtLast(head, 90);
+    // print(head);
+
+    head = InsertAtKth(head, 10, 2);
+    print(head);
 }
 
