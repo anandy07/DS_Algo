@@ -121,24 +121,24 @@ Node* InsertAtLast(Node* head, int val){
     return head;
 }
 
-Node* InsertAtKth(Node* head, int val, int k){
+// Node* InsertAtKth(Node* head, int val, int k){
 
-    Node* num = new Node(val);
-    Node* temp = head;
-    int cnt=0;
-    while(temp != NULL){
+//     Node* num = new Node(val);
+//     Node* temp = head;
+//     int cnt=0;
+//     while(temp != NULL){
         
-        cnt++;
-        if(cnt == k){
-            num->next = temp->next;
-            temp->next = num;
-            break;
-        }
-        temp = temp->next;
+//         cnt++;
+//         if(cnt == k){
+//             num->next = temp->next;
+//             temp->next = num;
+//             break;
+//         }
+//         temp = temp->next;
        
-    }
-    return head;
-}
+//     }
+//     return head;
+// }
 
 
 int main(){
@@ -174,7 +174,6 @@ int main(){
     // head = InsertAtLast(head, 90);
     // print(head);
 
-    head = InsertAtKth(head, 10, 2);
-    print(head);
+    
 }
 
