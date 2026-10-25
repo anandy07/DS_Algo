@@ -1,16 +1,18 @@
 // LeetCode : https://leetcode.com/problems/add-two-numbers/
 
-// 1 Approach : 
-// T.C : 
-// S.C : 
+
+// T.C : O(max(n,m))
+// S.C : O(max(n,m))
 
 
 /*
+// 1 Approach : 
 
 I am using two pointer to triverse the lists , then adding both the digits and the previous carry , storing the sum%10 in the new node 
 updating the carry by sum/10 , if there any carry left attach to it and return the dummy->next
 
-
+Note : whenever you want to create a new List always use dummy node
+ListNode* dummy = new ListNode(-1);
 
 */
 
